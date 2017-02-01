@@ -1,0 +1,6 @@
+framework module Pods_ConceptOnboarding {
+  umbrella header "Pods-ConceptOnboarding-umbrella.h"
+
+  export *
+  module * { export * }
+}

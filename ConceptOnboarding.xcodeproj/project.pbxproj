@@ -1,0 +1,401 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		21C30A271E423623008112A7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21C30A261E423623008112A7 /* AppDelegate.swift */; };
+		21C30A291E423623008112A7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21C30A281E423623008112A7 /* ViewController.swift */; };
+		21C30A2C1E423623008112A7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 21C30A2A1E423623008112A7 /* Main.storyboard */; };
+		21C30A2E1E423623008112A7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 21C30A2D1E423623008112A7 /* Assets.xcassets */; };
+		21C30A311E423623008112A7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 21C30A2F1E423623008112A7 /* LaunchScreen.storyboard */; };
+		FF0A253498D6B07827C98332 /* Pods_ConceptOnboarding.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 292D5CCA21827924C8CD8324 /* Pods_ConceptOnboarding.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		15FAEB3985BAB007BD096AFF /* Pods-ConceptOnboarding.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ConceptOnboarding.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ConceptOnboarding/Pods-ConceptOnboarding.debug.xcconfig"; sourceTree = "<group>"; };
+		21C30A231E423623008112A7 /* ConceptOnboarding.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ConceptOnboarding.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		21C30A261E423623008112A7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		21C30A281E423623008112A7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		21C30A2B1E423623008112A7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		21C30A2D1E423623008112A7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		21C30A301E423623008112A7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		21C30A321E423623008112A7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		292D5CCA21827924C8CD8324 /* Pods_ConceptOnboarding.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ConceptOnboarding.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		88B95BD1F35ACA4BAABC511A /* Pods-ConceptOnboarding.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ConceptOnboarding.release.xcconfig"; path = "Pods/Target Support Files/Pods-ConceptOnboarding/Pods-ConceptOnboarding.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		21C30A201E423623008112A7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FF0A253498D6B07827C98332 /* Pods_ConceptOnboarding.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		09D2E88139A80B38559704FA /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				15FAEB3985BAB007BD096AFF /* Pods-ConceptOnboarding.debug.xcconfig */,
+				88B95BD1F35ACA4BAABC511A /* Pods-ConceptOnboarding.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		21C30A1A1E423623008112A7 = {
+			isa = PBXGroup;
+			children = (
+				21C30A251E423623008112A7 /* ConceptOnboarding */,
+				21C30A241E423623008112A7 /* Products */,
+				09D2E88139A80B38559704FA /* Pods */,
+				B24C5DF163923998D8B91393 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		21C30A241E423623008112A7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				21C30A231E423623008112A7 /* ConceptOnboarding.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		21C30A251E423623008112A7 /* ConceptOnboarding */ = {
+			isa = PBXGroup;
+			children = (
+				21C30A261E423623008112A7 /* AppDelegate.swift */,
+				21C30A391E423787008112A7 /* Views */,
+				21C30A381E42377D008112A7 /* Controllers */,
+				21C30A2D1E423623008112A7 /* Assets.xcassets */,
+				21C30A321E423623008112A7 /* Info.plist */,
+			);
+			path = ConceptOnboarding;
+			sourceTree = "<group>";
+		};
+		21C30A381E42377D008112A7 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				21C30A281E423623008112A7 /* ViewController.swift */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		21C30A391E423787008112A7 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				21C30A2A1E423623008112A7 /* Main.storyboard */,
+				21C30A2F1E423623008112A7 /* LaunchScreen.storyboard */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		B24C5DF163923998D8B91393 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				292D5CCA21827924C8CD8324 /* Pods_ConceptOnboarding.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		21C30A221E423623008112A7 /* ConceptOnboarding */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 21C30A351E423623008112A7 /* Build configuration list for PBXNativeTarget "ConceptOnboarding" */;
+			buildPhases = (
+				BBB02708042C238D8672CC3F /* [CP] Check Pods Manifest.lock */,
+				21C30A1F1E423623008112A7 /* Sources */,
+				21C30A201E423623008112A7 /* Frameworks */,
+				21C30A211E423623008112A7 /* Resources */,
+				5CE70F6F557F748DB4A87D14 /* [CP] Embed Pods Frameworks */,
+				9CAB9DC47253BBDB4CB662F1 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ConceptOnboarding;
+			productName = ConceptOnboarding;
+			productReference = 21C30A231E423623008112A7 /* ConceptOnboarding.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		21C30A1B1E423623008112A7 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0820;
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = "Lovish Dogra";
+				TargetAttributes = {
+					21C30A221E423623008112A7 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = R2HCX9V229;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 21C30A1E1E423623008112A7 /* Build configuration list for PBXProject "ConceptOnboarding" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 21C30A1A1E423623008112A7;
+			productRefGroup = 21C30A241E423623008112A7 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				21C30A221E423623008112A7 /* ConceptOnboarding */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		21C30A211E423623008112A7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				21C30A311E423623008112A7 /* LaunchScreen.storyboard in Resources */,
+				21C30A2E1E423623008112A7 /* Assets.xcassets in Resources */,
+				21C30A2C1E423623008112A7 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		5CE70F6F557F748DB4A87D14 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ConceptOnboarding/Pods-ConceptOnboarding-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9CAB9DC47253BBDB4CB662F1 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ConceptOnboarding/Pods-ConceptOnboarding-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BBB02708042C238D8672CC3F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		21C30A1F1E423623008112A7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				21C30A291E423623008112A7 /* ViewController.swift in Sources */,
+				21C30A271E423623008112A7 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		21C30A2A1E423623008112A7 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				21C30A2B1E423623008112A7 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		21C30A2F1E423623008112A7 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				21C30A301E423623008112A7 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		21C30A331E423623008112A7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		21C30A341E423623008112A7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		21C30A361E423623008112A7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 15FAEB3985BAB007BD096AFF /* Pods-ConceptOnboarding.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = R2HCX9V229;
+				INFOPLIST_FILE = ConceptOnboarding/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.lovishdogra.ConceptOnboarding;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		21C30A371E423623008112A7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 88B95BD1F35ACA4BAABC511A /* Pods-ConceptOnboarding.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = R2HCX9V229;
+				INFOPLIST_FILE = ConceptOnboarding/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.lovishdogra.ConceptOnboarding;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		21C30A1E1E423623008112A7 /* Build configuration list for PBXProject "ConceptOnboarding" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				21C30A331E423623008112A7 /* Debug */,
+				21C30A341E423623008112A7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		21C30A351E423623008112A7 /* Build configuration list for PBXNativeTarget "ConceptOnboarding" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				21C30A361E423623008112A7 /* Debug */,
+				21C30A371E423623008112A7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 21C30A1B1E423623008112A7 /* Project object */;
+}
