@@ -1,18 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="ConceptOnboarding" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Onboard" id="BYZ-38-t0r" customClass="ViewController" customModule="ConceptOnboarding" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -25,22 +26,119 @@
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Q7Z-X8-a4V">
+                                <rect key="frame" x="144" y="551" width="88" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="88" id="XgH-kM-6AD"/>
+                                    <constraint firstAttribute="height" constant="30" id="srh-gm-miL"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="GillSans" family="Gill Sans" pointSize="16"/>
+                                <state key="normal" title="Get Started"/>
+                                <connections>
+                                    <action selector="tapGetStarted:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ANs-7m-p1c"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="b3O-O3-1Ev">
+                                <rect key="frame" x="313" y="28" width="46" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="CNs-Dg-JRZ"/>
+                                    <constraint firstAttribute="width" constant="46" id="hX7-aq-hY2"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="GillSans" family="Gill Sans" pointSize="16"/>
+                                <state key="normal" title="Skip">
+                                    <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="tapSkip:" destination="BYZ-38-t0r" eventType="touchUpInside" id="mC7-yK-KzK"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="b3O-O3-1Ev" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="0J1-p7-oeL"/>
                             <constraint firstAttribute="trailing" secondItem="2i3-ew-baS" secondAttribute="trailing" id="0hD-ab-zbI"/>
                             <constraint firstItem="2i3-ew-baS" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="-20" id="1NQ-X2-HlC"/>
+                            <constraint firstItem="b3O-O3-1Ev" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="JlD-KW-ZIB"/>
                             <constraint firstItem="2i3-ew-baS" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="LN2-Fc-jzc"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="2i3-ew-baS" secondAttribute="bottom" id="SzK-Rx-qxg"/>
+                            <constraint firstItem="Q7Z-X8-a4V" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Wo0-lH-XxJ"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Q7Z-X8-a4V" secondAttribute="bottom" constant="86" id="dYb-Xh-JqF"/>
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="btnGetStarted" destination="Q7Z-X8-a4V" id="CGR-0w-vNm"/>
+                        <outlet property="btnSkip" destination="b3O-O3-1Ev" id="KLL-Da-wat"/>
                         <outlet property="onBoardingView" destination="2i3-ew-baS" id="wAd-fx-4zq"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="428" y="134.48275862068968"/>
+        </scene>
+        <!--Welcome View Controller-->
+        <scene sceneID="o0h-MV-mUL">
+            <objects>
+                <viewController storyboardIdentifier="Mainboard" id="p8c-HD-ipk" customClass="WelcomeViewController" customModule="ConceptOnboarding" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="cMU-qJ-ITZ"/>
+                        <viewControllerLayoutGuide type="bottom" id="JZA-8E-MJX"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="MlE-zA-8Mx">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nFI-7x-bEh">
+                                <rect key="frame" x="89" y="93" width="196" height="75"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="75" id="7gF-7f-R9y"/>
+                                    <constraint firstAttribute="width" constant="196" id="T2e-Mc-m9Z"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="TrebuchetMS" family="Trebuchet MS" pointSize="25"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="For Onboard Screen please logout" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vrN-Cb-VMX">
+                                <rect key="frame" x="34" y="313" width="308" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="0sF-G9-uMg"/>
+                                    <constraint firstAttribute="width" constant="308" id="YxZ-dm-Ok6"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="TrebuchetMS" family="Trebuchet MS" pointSize="18"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jS0-nP-JC5">
+                                <rect key="frame" x="153" y="369" width="70" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="5nI-Z5-EKY"/>
+                                    <constraint firstAttribute="width" constant="70" id="iCp-1a-9Sv"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="GillSans" family="Gill Sans" pointSize="17"/>
+                                <state key="normal" title="Logout">
+                                    <color key="titleColor" red="0.0" green="0.66666666669999997" blue="0.66666666669999997" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="tapLogout:" destination="p8c-HD-ipk" eventType="touchUpInside" id="LeV-Fb-e09"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="nFI-7x-bEh" firstAttribute="centerX" secondItem="MlE-zA-8Mx" secondAttribute="centerX" id="R74-4g-IoB"/>
+                            <constraint firstItem="jS0-nP-JC5" firstAttribute="top" secondItem="vrN-Cb-VMX" secondAttribute="bottom" constant="16" id="ZQn-np-fhX"/>
+                            <constraint firstItem="jS0-nP-JC5" firstAttribute="centerX" secondItem="MlE-zA-8Mx" secondAttribute="centerX" id="ai4-pq-UJS"/>
+                            <constraint firstItem="vrN-Cb-VMX" firstAttribute="top" secondItem="nFI-7x-bEh" secondAttribute="bottom" constant="145" id="bqD-KZ-oSM"/>
+                            <constraint firstItem="vrN-Cb-VMX" firstAttribute="centerX" secondItem="MlE-zA-8Mx" secondAttribute="centerX" id="kTh-UX-0vr"/>
+                            <constraint firstItem="nFI-7x-bEh" firstAttribute="centerY" secondItem="MlE-zA-8Mx" secondAttribute="centerY" constant="-203" id="pgE-mX-730"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="btnLogout" destination="jS0-nP-JC5" id="nJq-u1-yJg"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tLJ-mF-Ehh" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1181.5999999999999" y="133.5832083958021"/>
         </scene>
     </scenes>
 </document>

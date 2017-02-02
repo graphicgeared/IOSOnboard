@@ -8,11 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		21C30A271E423623008112A7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21C30A261E423623008112A7 /* AppDelegate.swift */; };
-		21C30A291E423623008112A7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21C30A281E423623008112A7 /* ViewController.swift */; };
+		21C30A291E423623008112A7 /* OnboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21C30A281E423623008112A7 /* OnboardViewController.swift */; };
 		21C30A2C1E423623008112A7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 21C30A2A1E423623008112A7 /* Main.storyboard */; };
 		21C30A2E1E423623008112A7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 21C30A2D1E423623008112A7 /* Assets.xcassets */; };
 		21C30A311E423623008112A7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 21C30A2F1E423623008112A7 /* LaunchScreen.storyboard */; };
 		21C30A3B1E4254F9008112A7 /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21C30A3A1E4254F9008112A7 /* OnboardingView.swift */; };
+		21C30A3D1E43C1D2008112A7 /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21C30A3C1E43C1D2008112A7 /* WelcomeViewController.swift */; };
 		FF0A253498D6B07827C98332 /* Pods_ConceptOnboarding.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 292D5CCA21827924C8CD8324 /* Pods_ConceptOnboarding.framework */; };
 /* End PBXBuildFile section */
 
@@ -20,12 +21,13 @@
 		15FAEB3985BAB007BD096AFF /* Pods-ConceptOnboarding.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ConceptOnboarding.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ConceptOnboarding/Pods-ConceptOnboarding.debug.xcconfig"; sourceTree = "<group>"; };
 		21C30A231E423623008112A7 /* ConceptOnboarding.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ConceptOnboarding.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		21C30A261E423623008112A7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		21C30A281E423623008112A7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		21C30A281E423623008112A7 /* OnboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardViewController.swift; sourceTree = "<group>"; };
 		21C30A2B1E423623008112A7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		21C30A2D1E423623008112A7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		21C30A301E423623008112A7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		21C30A321E423623008112A7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		21C30A3A1E4254F9008112A7 /* OnboardingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OnboardingView.swift; sourceTree = "<group>"; };
+		21C30A3C1E43C1D2008112A7 /* WelcomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
 		292D5CCA21827924C8CD8324 /* Pods_ConceptOnboarding.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ConceptOnboarding.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		88B95BD1F35ACA4BAABC511A /* Pods-ConceptOnboarding.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ConceptOnboarding.release.xcconfig"; path = "Pods/Target Support Files/Pods-ConceptOnboarding/Pods-ConceptOnboarding.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -84,8 +86,9 @@
 		21C30A381E42377D008112A7 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				21C30A281E423623008112A7 /* ViewController.swift */,
+				21C30A281E423623008112A7 /* OnboardViewController.swift */,
 				21C30A3A1E4254F9008112A7 /* OnboardingView.swift */,
+				21C30A3C1E43C1D2008112A7 /* WelcomeViewController.swift */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -232,7 +235,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				21C30A3B1E4254F9008112A7 /* OnboardingView.swift in Sources */,
-				21C30A291E423623008112A7 /* ViewController.swift in Sources */,
+				21C30A3D1E43C1D2008112A7 /* WelcomeViewController.swift in Sources */,
+				21C30A291E423623008112A7 /* OnboardViewController.swift in Sources */,
 				21C30A271E423623008112A7 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
